@@ -49,7 +49,11 @@ function Ffooter() {
 function Hheader() {
   return (
     <div>
-      <h1>March Madness</h1>
+      <h1>March Madness Schools</h1>
+      <p>
+        This site lists out Schools, their mascots, and their locations that
+        have participated in March Madness
+      </p>
     </div>
   );
 }
@@ -60,9 +64,11 @@ function App() {
       <header className="App-header">
         <img src={bball} className="App-logo" alt="logo" width="200" />
         <Hheader />
-        <TeamList />
       </header>
-      <footer className="App-footer">
+      <body className="App-header">
+        <TeamList />
+      </body>
+      <footer className="App-header">
         <Ffooter />
       </footer>
     </div>
